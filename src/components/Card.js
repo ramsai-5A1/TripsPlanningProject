@@ -9,14 +9,14 @@ function Card({tour, removeTour}) {
     function readMoreHandler() {
         setReadMore(!readMore);
     }
-    
+
     return (
         <div className='card'>
             <img src={tour.imageURL} className='image'></img>
 
-            <div className='tour-info'>
+            <div className='tour_info'>
                 <div className='tour_details'>
-                    <h4 className='tour_price'>{tour.cost}</h4>
+                    <h4 className='tour_price'>${tour.cost}</h4>
                     <h4 className='tour_name'>{tour.name}</h4>
                 </div>
 

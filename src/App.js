@@ -13,10 +13,12 @@ function App() {
   }
 
   if(tours.length === 0) {
-    return (<div>
-      <h2>No Tours Left</h2>
-      <button onClick={() => setTours(data)}>Refresh</button>
-    </div>);
+    return (
+      <div className='refresh'>
+        <h2>No Tours Left</h2>
+        <button className='button_white' onClick={() => setTours(data)}>Refresh</button>
+      </div>
+    );
   }
 
   return (
